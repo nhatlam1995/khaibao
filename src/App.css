@@ -46,3 +46,8 @@
 .content-wrap {
   flex: 1
 }
+
+.padding {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
