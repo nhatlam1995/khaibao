@@ -6,10 +6,11 @@ function Login() {
     return (
         <Container>
             <Container>
+                <div className='text-center'>
                 <Form>
                     <FormGroup>
                         <Label for="exampleEmail">Nhập Email để đăng nhập</Label>
-                        <Input className="w-100" type="email" name="email" id="exampleEmail" placeholder="ex: yourmail@gmail.com, ..." required />
+                        <Input className="w-25 mx-auto" type="email" name="email" id="exampleEmail" placeholder="ex: yourmail@gmail.com, ..." required />
                     </FormGroup>
                     <Link to='/form'>
                         <Button outline color="primary">Gửi</Button>
@@ -17,6 +18,7 @@ function Login() {
                 </Form>
                 <div style={{ paddingTop: '10px' }} />
                 <p class="font-italic">Yêu cầu email bao gồm cả @ và tên miền phía sau</p>
+                </div>
                 <br /><br />
             </Container>
             <Container className="text-center"><h4 className='text-danger font-weight-bold'>LƯU Ý</h4></Container>
