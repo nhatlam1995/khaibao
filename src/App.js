@@ -15,14 +15,18 @@ function App() {
     <div className='page-container'>
       <div className='content-wrap'>
         <Navbars />
-        <Switch>
-          <Route path="/" exact component={Login}></Route>
-          <Route path={routeConfig.login["list-url"]} component={Login} />
-          <Route path={routeConfig.register["list-url"]} component={Register} />
-          <Route path={routeConfig.loginForm["list-url"]} component={LoginForm} />
-          <Route path={routeConfig.registerForm["list-url"]} component={RegisterForm} />
-          <Route path={routeConfig.report["list-url"]} component={Report} />
-        </Switch>
+        <div className='container'>
+          <div className='padding'>
+            <Switch>
+              <Route path="/" exact component={Login}></Route>
+              <Route path={routeConfig.login["list-url"]} component={Login} />
+              <Route path={routeConfig.register["list-url"]} component={Register} />
+              <Route path={routeConfig.loginForm["list-url"]} component={LoginForm} />
+              <Route path={routeConfig.registerForm["list-url"]} component={RegisterForm} />
+              <Route path={routeConfig.report["list-url"]} component={Report} />
+            </Switch>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
