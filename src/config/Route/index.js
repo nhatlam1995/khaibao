@@ -5,7 +5,10 @@ export const routeConfig = {
     "register":{
         "list-url": "/register"
     },
-    "form": {
+    "registerForm":{
+        "list-url": "/register/form"
+    },
+    "loginForm": {
         "list-url": "/form"
     },
     "report": {
